@@ -11,7 +11,7 @@ const codes = [
   "a"
 ];
 
-const main = document.getElementsByTagName('body');
+const main = document.getElementsByTagName('body')[0];
 
 function init() {
   // your code here
