@@ -15,10 +15,11 @@ function init() {
   // your code here
   // get the body element
   
-  const body = document.getElementsByTagName('body')
+  const main = document.getElementsByTagName('body')
   let index = 0
+  
   //setup listener
-  body.addEventListener('keydown', function onKeyDownHandler(e) {
+  main.addEventListener('keydown', function onKeyDownHandler(e) {
     const key = e.key
     if (key === codes[index]) {
       index++
