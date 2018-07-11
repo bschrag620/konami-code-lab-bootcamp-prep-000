@@ -16,5 +16,19 @@ function init() {
   // get the body element
   
   const body = document.getElementById('body')
-  
+  let index = 0
+  //setup listener
+  body.addEventListener('keydown', function onKeyDownHandler(e) {
+    const key = e.key
+    if (key === codes[index]) {
+      index++
+      if (index === codes.length) {
+        alert('Hurray!')
+        index = 0
+      }
+    }
+    else {
+      index = 0
+    }
+  })
 }
