@@ -13,5 +13,8 @@ const codes = [
 
 function init() {
   // your code here
+  // get the body element
+  
+  const body = document.getElementById('body')
   
 }
