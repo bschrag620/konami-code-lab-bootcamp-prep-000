@@ -11,25 +11,27 @@ const codes = [
   "a"
 ];
 
+const main = document.getElementsByTagName('body');
+
 function init() {
   // your code here
   // get the body element
   
-  const main = document.getElementsByTagName('body')
-  let index = 0
+
+  let index = 0;
   
   //setup listener
   main.addEventListener('keydown', function onKeyDownHandler(e) {
-    const key = e.key
+    const key = e.key;
     if (key === codes[index]) {
-      index++
+      index++;
       if (index === codes.length) {
-        alert('Hurray!')
-        index = 0
+        alert('Hurray!');
+        index = 0;
       }
     }
     else {
-      index = 0
+      index = 0;
     }
   })
 }
