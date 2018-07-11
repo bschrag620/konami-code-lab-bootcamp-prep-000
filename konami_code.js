@@ -15,7 +15,7 @@ function init() {
   // your code here
   // get the body element
   
-  const body = document.getElementById('body')
+  const body = document.getElementByTagName('body')
   let index = 0
   //setup listener
   body.addEventListener('keydown', function onKeyDownHandler(e) {
